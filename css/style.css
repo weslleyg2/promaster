@@ -31,7 +31,7 @@ body{
     box-shadow: 0 0 5em #f9cf58;
 }
 .button1{
-    width: 100%;
+    width: 80%;
     padding: 0;
 }
 /*.gallery-img{
@@ -243,7 +243,7 @@ layout */
 }
 .price img{
     padding-top: 10em;
-    width: 800px;
+    max-width: 80%;
    
 }
 .price img:last-child{
