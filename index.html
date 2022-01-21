@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Weslley Vander">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">  
+      
     <title>Curso Pró-Master</title>
 </head>
 <body>
@@ -17,13 +18,37 @@
                 utilizando o método pró-master mesmo que você nunca tenha aprendido a usar essa técnica antes!</b></p>
                 
                 <div class="div-video">
-                    <iframe class="video-responsible" width="560" height="315" src="https://www.youtube.com/embed/zYVUnPzipB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-responsible" width="560" height="315" src="https://www.youtube.com/embed/zYVUnPzipB8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
                 </div>
         </header>
         <main>
             <h2>Última chamada para o desafio pró-master. você vai ficar de fora?</h2>
-            <a href="https://pay.hotmart.com/W56920762U?checkoutMode=10&bid=1636906483116"><img class="button1" src="/image/botão1.png" alt="Quero me tornar um Pró-master!"></a>
-            
+            <script type="module" src="/Countdown/script.js"></script>
+            <div>
+                <ul class="countdown">
+                    <li>
+                        <span data-time></span>
+                        <div>Dia(s)</div>
+                    </li>
+                    <li>
+                        <span data-time></span>
+                        <div>Hora(s)</div>
+                    </li>
+                    <li>
+                        <span data-time></span>
+                        <div>Min.(s)</div>
+                    </li>
+                    <li>
+                        <span data-time></span>
+                        <div>Sec.(s)</div>
+                    </li>
+                </ul>
+            </div>
+            <script type="module" src="/scroll.js"></script>
+            <nav>
+            <a href="#button5"><img class="button1 " id="scroll" src="/image/botão1.png" alt="Quero me tornar um Pró-master!"></a>
+            </nav>
             <h3> O QUE É O MÉTODO PRÓ-MASTER?</h3>
             <p> <b>É um curso promovido pela empresa gesso ouro, 
                 visa capacitar aqueles que já estão no mercado e qualificar a
@@ -94,8 +119,14 @@
             <div class="price">
               <p><b>PREÇO COM DESCONTO:</b><br>
                 <strong>DE <s>R$497,00</s> POR 12X DE 19,19</strong></p>
-              <img src="/image/resumocompra.png" alt="Preço de desconto">
-              <img src="/image/garantia.png" alt="Garantia">
+                <picture>
+                    <source media="(max-width:880px)" srcset="/image/resumocompramobile.png">
+                    <img src="/image/resumocompra.png" alt="Preço de desconto">
+                </picture>
+                <picture>
+                    <source media="(max-width:880px)" srcset="/image/selomobile.png">
+                    <img src="/image/garantia.png" alt="Garantia">
+                </picture>
             </div>
             <p class="buttons"><a href="#">Quero aproveitar a oportunidade<br>e me tornar um Pró-Master!</a></p>      
 
@@ -122,7 +153,10 @@
 
             </div>
           </section>
-          <div class="button5"><a href="https://pay.hotmart.com/W56920762U?checkoutMode=10&bid=1636906483116" target="_blank"><img src="/image/botão5.png" alt="Clique aqui e compre agora mesmo!"></a></div>
+          <div class="button5" id="button5">
+              <!--<a href="https://pay.hotmart.com/W56920762U?checkoutMode=10&bid=1636906483116" target="_blank"><img src="/image/botão5.png" alt="Clique aqui e compre agora mesmo!"></a>-->
+              <a href="#" target="_blank"><img src="/image/botão5.png" alt="Clique aqui e compre agora mesmo!">
+            </div>
 
         </main>
     </div>

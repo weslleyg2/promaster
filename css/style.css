@@ -147,7 +147,7 @@ body{
     padding: .2em;
 }
 .div-img-text{
-    overflow: auto;
+    overflow: hidden;
 }
 .img-text{
     float: left;
@@ -237,6 +237,7 @@ layout */
         flex-direction: column;
     }
 }
+
 .price{
    
     color: rgb(249, 207, 88) !important;
@@ -262,4 +263,55 @@ layout */
     max-width: 600px;
     display: inline-block;
     text-align: center;
+}
+
+.countdown li{
+    list-style: none;
+
+}
+
+.countdown{
+   /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,400px));
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;*/
+
+    display: flex;
+    flex-direction: row;
+    font-size:30px;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    
+    
+}
+.countdown li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: #f9cf58;
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(0,0, 0, 4) ;
+    text-align: center;
+    margin: 0 .2em;
+    border: 2px solid #ac8a2c;
+    width: 100%;
+
+}
+.countdown li span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 8rem;
+}
+@media (max-width:800px){
+    .countdown{
+        flex-direction: column;
+        font-size:30px;
+        text-align: center;
+        justify-content: center;
+        padding: 2em;
+    }
+    
 }
