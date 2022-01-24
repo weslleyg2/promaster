@@ -94,7 +94,7 @@ body{
      margin: 2em 0 ;
  }
  h3:before{
-    content: url(/image/icone.png);
+    content: url(promaster/image/icone.png);
     vertical-align: -webkit-baseline-middle;
     padding-right: .5em;
     
@@ -128,7 +128,7 @@ body{
 }
 
 .container::before{
-    background-image: url(/image/check-circle.png);
+    background-image: url(promaster/image/check-circle.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
     display: inline-block;
